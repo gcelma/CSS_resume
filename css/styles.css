@@ -1,0 +1,234 @@
+/* Color Palette
+#96D53B - Green
+#F10073 - Pink
+#0093CD - Blue
+#F4A200 - Orange
+#4F268B - Purple
+*/
+
+/* Global styles
+------------------------------*/
+/*
+* {
+    border: 1px solid black;
+}
+*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Song Myung', serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #F10073;
+    text-decoration: none;
+}
+ 
+ .content-wrap {
+     max-width: 950px;
+     margin: 0 auto;
+     padding: 50px;
+     overflow: auto;
+ }
+
+ .uppercase {
+     text-transform: uppercase;
+ }
+
+ .btn {
+    background: #F10073;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+ }
+
+
+
+/* Header and Footer
+------------------------------*/
+
+header, footer {
+    background: #4F268B;
+    color: #96D53B;
+}
+
+/* Header */
+
+header h1, header h2 {
+    color: #F4A200;
+    margin: 0;
+}
+
+header {
+    padding-top: 120px;
+    position: relative;
+}
+
+.pink-separator {
+    border-bottom: 4px solid #F10073;
+}
+
+.download {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    z-index: 0;
+}
+
+.leopard {
+    background: linear-gradient(rgba(79,38,139, 0.65), rgba(79,38,139, 0.85)), 
+    url(../img/leopard.jpg) fixed;
+    background-size: cover;
+}
+
+
+/*
+.opacity {
+    background: rgba(79,38,139, 0.2);
+}
+*/
+/* navigation using DISPLAY method*/
+
+.navigation {
+    text-align: center;
+    background: #F4A200;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
+}
+
+.navigation a {
+    padding: 10px;
+    margin: 20px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Song Myung', serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+ */
+
+ /* navigation using DISPLAY method
+
+ .navigation {
+    overflow: hidden;
+ }
+
+ .navigation a {
+     float: left;
+     padding: 30px;
+     width: 25%;
+     text-align: center;
+     text-decoration: none;
+ }
+*/
+
+/* Footer */
+
+footer {
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    line-height: 2;
+}
+
+/* Work experience
+------------------------------*/
+
+.experience {
+    background: #F4A200;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+.job-description {
+    margin-bottom: 25px;
+}
+
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+/* Education
+------------------------------*/
+
+.education {
+    background: linear-gradient(rgba(241,0,115, 0.65), rgba(241,0,115, 0.85)), 
+    url(../img/radio.jpeg) fixed;
+    background-size: cover;
+}
+
+p + h3 {
+    margin-top: 30px;
+}
+
+/* Media Queries
+------------------------------*/
+
+@media (min-width: 900px) {
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+        
+    }
+   
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        text-align: center;
+    }
+    .profile-image {
+        width: 50%;
+    }
+}
+
+@media (max-width: 675px) {
+    header {
+        padding-top: 250px;
+    }
+}
